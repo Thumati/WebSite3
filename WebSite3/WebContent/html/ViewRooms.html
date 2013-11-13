@@ -1,0 +1,101 @@
+
+
+<!--   <div ng-app="hotelData" ng-controller="viewController" >
+    
+    <ul class="thumbnails">
+    <li class="span4">
+    <div class="thumbnails"></div>-->
+<!--  <li ng-repeat=" hotelRoomsDetails in hotelRoomsDetailslist ">
+         <img src="{{hotelRoomsDetails.image}}">
+          <h3>{{hotelRoomDetails.Room_type}}</h3>
+         <p>{{hotelRoomDetails.description}}</p>
+     
+
+     </ul>
+    </div >
+    </div> 
+
+    	  <script src="js/menuController.js"></script>-->
+
+
+<!--  <link type ="text/css" rel = "stylesheet" href="WebContent/css/bootstrap.min.css">
+  <!--  <input type="search" ng-model="q" placeholder="filter..." />-->
+<!--  <div>
+  <!--  <ul class="thumbnails col-md-3">
+ 
+	<li class="span4" ng-repeat="hotelRoomsDetails in hotelRoomsDetailslist">
+		<div class="thumbnail">
+		<img src="{{hotelRoomsDetails.image}}">
+			<h3>Type Of Room:{{hotelRoomsDetails.Room_type}}</h3> 
+				<p>description {{hotelRoomsDetails.description}}</p>
+				<button type="button" class="btn btn-primary btn-lg">Reservation</button>
+			</div>
+	</li>
+</ul>
+</div>
+<script src="js/bootstrap.min.js"></script>
+     	<script src = "js/bootstrap.js"></script>-->
+
+
+
+
+
+<!--  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Paradise Hotel</title>
+<script src="js/angular.js"></script>
+<script src="js/menuController.js"></script>
+<a class="btn" href="#/room/{{$index}}">/////////
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+<link href="WebContent/css/bootstrap.min.css">-->
+
+
+<!--  <div class="row-fluid">
+	<div class="span4">
+		<div class="thumbnail">
+			<div ng-repeat="hotelRoomsDetails in hotelRoomsDetailslist">
+				<img ng-src="{{hotelRoomsDetails.image}}" class="thumbnail">
+				<h3 align="center">{{hotelRoomsDetails.Room_type}}</h3>
+				<p>{{hotelRoomsDetails.description}}</p>
+				<p align="center">Price: {{hotelRoomsDetails.Price_reg}} per
+					night</p>
+				<p align="center">
+					<a class="btn btn-primary" href="#/room/{{$index}}">Reservation</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>-->
+
+<!--  	<ul class="span3" ng-repeat="hotelRoomsDetails in hotelRoomsDetailslist"> 
+		<div class="thumbnail">
+				<img ng-src="{{hotelRoomsDetails.image}}" class="thumbnail">
+				<h3 align="center">{{hotelRoomsDetails.Room_type}}</h3>
+				<p>{{hotelRoomsDetails.description}}</p>
+				<p align="center">Price: {{hotelRoomsDetails.Price_reg}} per
+					night</p>
+				<p align="center">
+					<a class="btn btn-primary" href="#/reservation">Reservation</a>
+				</p>
+			</div>
+		
+	</ul>-->
+	
+	
+	<ul class="media-list">
+  <li class="media" ng-repeat="hotelRoomsDetails in hotelRoomsDetailslist">
+    <a class="pull-left span4" >
+      <img class="media-object" ng-src="{{hotelRoomsDetails.image}}" class="thumbnail">
+    </a>
+    <div class="media-body">
+      <h3 class="media-heading" align="center">{{hotelRoomsDetails.Room_type}}</h3>
+      <p>{{hotelRoomsDetails.description}}</p>
+				<p align="center">Price: {{hotelRoomsDetails.Price_reg}} per
+					night</p>
+				<p align="right">
+					<a class="btn btn-primary" href="#/room/{{$index}}">Reservation</a>
+				</p>
+      
+    </div>
+  </li>
+	</ul>
+

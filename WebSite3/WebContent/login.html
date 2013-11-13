@@ -1,0 +1,52 @@
+
+<!doctype html>
+<html ng-app="myApp">
+
+  <head>
+
+
+  </head>
+  <body>
+  
+  
+ <!--   <div ng-app="TestCookie">
+    <div ng-controller="CookieCtrl">
+        Cookie value: {{getCookie()}} <br/>
+        <input type="text" ng-model="inputValue" />
+        <button ng-click="setCookie()">Update cookie</button>
+    </div>
+</div>-->
+  
+    <div ng-controller="appController">
+    <div id=emailResult>
+    {{emailResult}}</div>
+        E-mail:   <input type="email" ng-model="EMAIL"/><br />
+        Password: <input type="password" ng-model="password"/></br>
+        <button ng-click="validate()">signin</button>
+        <link> </link>
+       </div>
+  
+    
+    
+    
+    
+    
+    
+    <style type="text/css">
+      .css-form input.ng-invalid.ng-dirty {
+        background-color: #FA787E;
+      }
+    
+      .css-form input.ng-valid.ng-dirty {
+        background-color: #78FA89;
+      }
+    </style> 
+    <script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js" type="text/javascript"></script>
+<script src="js/angular.js"></script>
+<script src="js/angular-cookies.js"></script>
+<script src="js/validation.js"></script>
+
+  </body>
+</html>

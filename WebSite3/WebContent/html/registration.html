@@ -1,0 +1,119 @@
+<!--  <div class="container">
+	Name:<input type="text" ng-model="name"> Email:<input
+		type="text" ng-model="email"> Password:<input type="text"
+		ng-model="pass"> age:<input type="text" ng-model="age">
+	Gender:<input type="text" ng-model="gender"> <input
+		type="submit" ng-model="click" ng-click="registration()">
+</div>-->
+    
+<!--       <form name = "myForm"  class ="well span7" style="width:600px; margin:3 auto;" > -->
+   <!--       <f
+        name="validatedForm"
+        mw-validate="{ notMatch: 'password1 == password2' }"
+        >
+        <!-- Show errors -->
+      <!--    <div ng-show="validatedForm.$invalid && ! validatedForm.$pristine" class="errors">
+            <div ng-repeat="(errorType, fields) in validatedForm.$error">
+                <p ng-repeat="field in fields">{{field.$name}} {{errorType}}</p>
+            </div>
+        </div>-->
+        
+         <!-- Form Fields -->       
+
+       <!--   <p><label>Username: </label><input type="text" name="name" ng-model="name"
+                required ng-minlength="5" ng-maxlength="20" size="20"/></p>
+        <p><label>Password: </label><input type="text" name="password" ng-model="password1"/></p>
+        <p><label>Repeat  : </label><input type="text" name="password2" ng-model="password2"/></p>
+        <p><button ng-disabled="! validatedForm.$valid">Save</button></p>
+    </form>
+</div>-->
+        
+ <!--  
+     <label class="name">Employee name:</label> <input type="text" name="name" ng-model="name" required ng-minlength="5" ng-maxlength="20" size="20" required/>
+         <span class="error" ng-show="myForm.userName.$error.required">*</span>
+        <span class ="error" ng-show ="myForm.userName.$error.pattern">Single word only</span><br/>
+
+<label class="email"> Email:</label> <input type ="text" ng-model="email" name ="email" required/>
+<span class="error" ng-show="myForm.email.$error.required">*</span>
+<span class="error" ng-show="myForm.email.$error.pattern">email only</span><br/>
+
+
+<label class=> password</label> <input type ="text" ng-model="pass" name ="pass"  required/>
+<span class="error" ng-show="myForm.email.$error.required">*</span>
+<span class ="error" ng-show ="myForm.email.$error.pattern">Single word only</span><br/>
+
+     <label> Age:</label> <input type ="number" ng-model="age" name ="userAge"/>
+        <span class ="error" ng-show ="myForm.userAge.$error.number">Enter number only</span><br/>
+
+        
+<label>Address:</label> <textarea ng-model="address" rows="3" cols="15" ></textarea><br/>
+ 
+ <lable>Credit Card No:</lable><input type="number" ng-model="ccn" name="ccn" required/>
+ <span class="error" ng-show="myForm.email.$error.required">*</span>
+ <span class ="error" ng-show ="myForm.userAge.$error.number">Enter number only</span><br/>
+
+        
+
+
+  <button  class ="btn btn-primary" value="validate!" ng-click="registration()">Submit</button>
+
+</form>-->
+<div style="width:600px; margin:3 auto;">
+<form class="well span5" name="mainForm" ng-submit="registration()">
+    </ul>
+    <li>
+      <label for="firstName">First Name</label>
+      <input id="firstName" name="firstName" type="text" ng-model="firstName" required/>
+      <span class="error" ng-show="mainForm.firstName.$error.required">*</span>
+    </li>
+    <li>
+      <label for="lastName">Last Name</label>
+      <input id="lastName" name="lastName" type="text" ng-model="lastName" required/>
+      <span class="error" ng-show="mainForm.lastName.$error.required">*</span>
+    </li>
+    <li>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" ng-model="email" required/>
+      <span class="error" ng-show="mainForm.email.$error.required">*</span>
+      <span class="error" ng-show="mainForm.email.$error.email">invalid email</span>
+    </li>
+    <li>
+      <label for="pass">PassWord</label>
+      <input id="pass" name="pass" type="password" ng-model="pass" required/>
+      <span class="error" ng-show="mainForm.pass.$error.required">*</span>
+      <span class="error" ng-show="mainForm.pass.$error.email">invalid password</span>
+    </li>
+    <li>
+    
+    <label> Age:</label> <input type ="number" ng-model="age" name ="userAge"/>
+        <span class ="error" ng-show ="myForm.userAge.$error.number">Enter number only</span><br/>
+    
+    
+    </li>
+ <li>   
+ <label>Address:</label> <textarea ng-model="address" rows="3" cols="15" ></textarea><br/>
+ </li>
+ 
+ <li>
+ <lable>Credit Card No:</lable><input type="number" ng-model="ccn" name="ccn" required/>
+ <span class="error" ng-show="myForm.email.$error.required">*</span>
+ <span class ="error" ng-show ="myForm.userAge.$error.number">Enter number only</span><br/>
+    </li>
+ 
+   
+      <input type="checkbox" ng-model="agreedToTerms" 
+        name="agreedToTerms" id="agreedToTerms" required/>
+      <label for="agreedToTerms">I agree to the terms</label>
+      <span class="error" ng-show="mainForm.agreedToTerms.$error.required">You must agree to the terms</span>
+    
+ 
+    
+      <button type="submit">Reserve</button>
+     
+    </ul>
+  </form>
+</div>
+
+
+
+

@@ -1,0 +1,49 @@
+@CHARSET "US-ASCII";
+.container body{
+
+
+background-color:yellow;
+
+}
+#siteHeader{
+	list-style-type: none;
+	margin: 0px;
+}
+#hotelName{
+	font-size: 2.5em;
+	padding-bottom: 5px;
+	float: left;
+}
+#hotelAddress,#phoneNumber{
+	text-align: right;
+}
+.loginPage{
+	list-style-type: none;
+	float: left;
+}	
+a:link    {color:green;}
+a:visited {color:gold;}
+a:hover   {color:red;}
+a:active  {color:yellow;}
+
+.navigationBar{
+	list-style-type: none;
+	padding-top: 10px;
+	font-size: 1.3em;
+}
+li.floatLeft{
+	float: left;
+	padding: 0px 12px;
+}
+li.floatRight{
+	float: right;
+}
+#content {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #66ffff;
+}
+.tileMe li {
+    display: inline;
+    float: left;
+}

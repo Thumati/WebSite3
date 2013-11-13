@@ -1,0 +1,55 @@
+<!--  <div ng-controller="roomController">
+<ul class="media-list">
+<li class="media">		
+<div class="thumbnail">
+				<img ng-src="{{room.image}}" class="thumbnail">
+				<h3 align="center">{{room.Room_type}}</h3>
+				<p>{{room.description}}</p>
+				<p align="center">Price: {{room.Price_reg}} per
+					night</p><br/>
+					<p align="center">
+					<a class="btn btn-primary" href="#/reservation">Reservation</a>
+				</p>
+			
+					</div>
+					Selected date is: <em>{{CheckIn | date:'fullDate' }}</em>
+				<div class="well well-small pull-right" ng-model="CheckIn">
+        <datepicker min="minDate" show-weeks="showWeeks"></datepicker>
+    </div>	<br/>
+ 				
+				Selected date is: <em>{{CheckOut | date:'fullDate' }}</em>
+				<div class="well well-small pull-right" ng-model="CheckOut">
+        <datepicker min="minDate" show-weeks="showWeeks"></datepicker>
+    </div>	
+ 					
+				
+			</li>
+		</ul>
+</div>-->
+<ul class="media-list">
+  <li class="media">
+    <a class="pull-left span4" >
+      <img class="media-object" ng-src="{{room.image}}" class="thumbnail">
+    </a>
+    <div class="media-body">
+      <h3 class="media-heading" align="center">{{room.Room_type}}</h3>
+      <p>{{room.description}}</p>
+				<p align="center">Price: {{room.Price_reg}} per
+					night</p>
+					</div>
+					<pre>Selected date is:{{CheckIn | date:'fullDate' }}</pre>
+				<div class="well well-small pull-right" ng-model="CheckIn">
+        <datepicker min="minDate" show-weeks="showWeeks"></datepicker>
+    </div>	
+ 				
+				<pre>Selected date is: {{CheckOut | date:'fullDate' }}</pre>
+				<div class="well well-small pull-left" ng-model="CheckOut">
+        <datepicker min="minDate" show-weeks="showWeeks"></datepicker>
+    </div>	
+				<p align="right">
+					<a class="btn btn-primary" href="#">Reservation</a>
+				</p>
+      
+    </div>
+  </li>
+	</ul>

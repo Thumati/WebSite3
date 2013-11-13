@@ -1,0 +1,52 @@
+
+<FORM NAME="ParameterPost" ng-submit="submit()" align="center">
+<TABLE BGCOLOR="BLANCHEDALMOND" ALIGN="CENTER" BORDER="0">
+    <TR>
+    <TD ALIGN="CENTER"><B>Name:</B></TD> 
+    <TD ALIGN="CENTER"> <INPUT TYPE="TEXT" SIZE="25" NAME="Person" ng-model="name" required></TD>
+    </TR>
+   
+    <TR>
+    <TD ALIGN="CENTER"><B>Email:</B></TD> 
+    <TD ALIGN="CENTER"> <INPUT TYPE="email" SIZE="25" MAXLENGTH="40" NAME="emailaddress" ng-model="email" required></TD>
+    </TR>
+      
+    <TR>
+    <TD ALIGN="CENTER"><B>Comments or Suggestions:</B></TD> 
+    <TD ALIGN="CENTER"> 
+    <TEXTAREA ROWS="6" COLS="40" WRAP="PHYSICAL" Name="suggestions" ng-model="suggestions" required>
+             Enter any comments or suggestions you have here.</TEXTAREA>
+    </TD>
+    </TR>
+    
+   
+    <TR>
+    
+    <TD ALIGN="LEFT">
+    
+   <!--   <INPUT TYPE="SUBMIT" VALUE="Send Comments" ALIGN="MIDDLE"> --><button type="submit">Submit</button> &nbsp; &nbsp;
+    <INPUT TYPE="RESET" VALUE="Clear Form" ALIGN="MIDDLE"> 
+    
+    </TD>
+    </TR>
+   
+</FORM>
+<ul class="media-list">
+  <li class="media" ng-repeat="Details in Detailslist">
+    <a class="pull-left span4" >
+      <img class="media-object" src="images/welcome.jpg" class="thumbnail">
+    </a>
+    <div class="media-body">
+      <h3 class="media-heading" align="left">Name:{{Details.name}}</h3>
+      <p><b><strong>Comment:</strong></b>{{Details.comment}}</p>
+				<p align="left">Email:{{Details.email}} 
+					</p>
+					<p align="left">Date:{{Details.date}}</p>
+				<p align="right">
+					<a href="#" ng-click="remove(Details.email,Details.comment)" ng-show="showRemove" >Remove</a>
+				</p>
+      
+    </div>
+  </li>
+	</ul>
+
