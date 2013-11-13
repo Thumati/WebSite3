@@ -49,7 +49,7 @@ response.setContentType("text/html");
 	      conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/HotelData", "root", "root");
 
 	      // Step 3: Execute a SQL SELECT query
-	      String sql = "update userInfo into set(username,email,pass,age,address,ccn)=(?,?,?,?,?) where email=?";
+	      String sql = "update userDetail into set(username,email,pass,age,address,ccn)=(?,?,?,?,?) where email=?";
 	      
 	      PreparedStatement prep =  conn.prepareStatement(sql); 
 	   
@@ -59,7 +59,8 @@ response.setContentType("text/html");
 	    		  prep.setString(2,details.email);
 	    		  prep.setString(3, details.pass);
 	    		  prep.setInt(4, details.age);
-	    		  prep.setInt(5, details.ccn);
+	    		  prep.setString(5, details.address);
+	    		  prep.setInt(6, details.ccn);
 	    		  prep.executeUpdate();
 	    		  prep.close();
 	    	System.out.println("executed success");

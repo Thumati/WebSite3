@@ -68,7 +68,8 @@ public class RoomDataBase extends HttpServlet {
 				hotelRoomsDetails.Room_area=rs.getDouble("Room_area");
 				hotelRoomsDetails.Price_reg=rs.getDouble("Price_reg");
 				hotelRoomsDetails.Price_deal=rs.getDouble("Price_deal");
-				hotelRoomsDetails.image="http://localhost:9999"+rs.getString("imgUrl");
+				hotelRoomsDetails.image=rs.getString("imgUrl");
+				//hotelRoomsDetails.image="http://localhost:9999"+rs.getString("imgUrl");
 		    	  ls.add(hotelRoomsDetails);     
 		    	  System.out.println("added to list");
 			}

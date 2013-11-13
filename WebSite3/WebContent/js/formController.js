@@ -57,7 +57,7 @@ app.controller("formController", function($scope, $location, dataFactory) {
 				name : $scope.name,
 				email : $scope.email,
 				pass : $scope.pass,
-				age : $scope.userAge,
+				age : $scope.age,
 				address : $scope.address,
 				ccn:$scope.ccn
 			};
@@ -65,9 +65,9 @@ app.controller("formController", function($scope, $location, dataFactory) {
 
 			dataFactory.registration(JSON.stringify($scope.data)).success(
 					function(result) {
-						setTimeout(function() {
+						
 							$location.path = "/Home";
-						}, 2000);
+						
 					}).error(function(data2) {
 				alert(data + "data");
 

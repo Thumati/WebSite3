@@ -50,7 +50,7 @@ public class RegistrationPage extends HttpServlet {
 					"jdbc:mysql://localhost:3306/HotelData", "root", "root");
 			System.out.println("Executing the SQL Query");
 			// Step 3: Execute a SQL SELECT query
-			String sql = "insert into userInfo(username,email,pass,age,gender) values (?,?,?,?,?)";
+			String sql = "insert into userDetail(name,email,pass,age,address,ccnnumber) values (?,?,?,?,?,?)";
 			System.out.println("Before the PrePared Statement");
 			PreparedStatement prep = conn.prepareStatement(sql);
 			System.out.println("After the prepared Statement");

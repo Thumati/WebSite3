@@ -59,7 +59,7 @@ public class ValidationServlet extends HttpServlet {
     			con=DriverManager.getConnection(url,user,pass);
     			st=con.createStatement();
     			System.out.println("connect to DB");
-    			rs=st.executeQuery("select * from UserInfo where email='"+usrdtl.email+"'"+" and "+"pass='"+usrdtl.pass+"'");
+    			rs=st.executeQuery("select * from UserDetail where email='"+usrdtl.email+"'"+" and "+"pass='"+usrdtl.pass+"'");
     			System.out.println("execute the query");  
     			System.out.println("hi db connected");
     			usrDtl = new UserDetails();

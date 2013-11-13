@@ -61,15 +61,15 @@
 <div style="width:600px; margin:3 auto;">
 <form class="well span5" name="mainForm" ng-submit="registration()">
     </ul>
-    <li>
+    <!-- <li>
       <label for="firstName">First Name</label>
       <input id="firstName" name="firstName" type="text" ng-model="firstName" required/>
       <span class="error" ng-show="mainForm.firstName.$error.required">*</span>
-    </li>
+    </li> -->
     <li>
-      <label for="lastName">Last Name</label>
-      <input id="lastName" name="lastName" type="text" ng-model="lastName" required/>
-      <span class="error" ng-show="mainForm.lastName.$error.required">*</span>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" ng-model="name" required/>
+      <span class="error" ng-show="mainForm.name.$error.required">*</span>
     </li>
     <li>
       <label for="email">Email</label>
@@ -85,7 +85,7 @@
     </li>
     <li>
     
-    <label> Age:</label> <input type ="number" ng-model="age" name ="userAge"/>
+    <label> Age:</label> <input type ="number" ng-model="age" name ="age"/>
         <span class ="error" ng-show ="myForm.userAge.$error.number">Enter number only</span><br/>
     
     
