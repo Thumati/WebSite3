@@ -125,50 +125,16 @@ app.controller("reservController",
 					
 					$('.dt').datepicker();					
 					
-					var dialogPushProfile = {
-						controller : 'ModalInstanceCtrl',
-						templateUrl : 'html/mymodel.html'
-					};
+					
 					
 					$scope.reserve = function() {
 
 
-						$dialog.dialog(angular.extend(dialogPushProfile, {
-							resolve : {
-							},
-							backdropFade : true,
-							dialogFade : true
-						})).open().then(function(result) {
-							if (result) {
-								angular.copy(result);
-							}
-						
-						});
-					};
-
-
 		
 		
 
-				//	$scope.reserve = function() {
-						 
-//							    var modalInstance = $modal.open({
-//							      templateUrl: 'html/mymodel.html',
-//							      controller: 'ModalInstanceCtrl',
-//							      resolve: {
-//							          items:angular.copy(items)
-//							        
-//							      }
-//							    });
-//
-//							   modalInstance.result.then(function (selectedItem) {
-//							      $scope.selected = selectedItem;
-//							    }, function () {
-//							      $log.info('Modal dismissed at: ' + new Date());
-//							    });
-				//};
 				
-});
+
 						
 
 
@@ -191,7 +157,7 @@ app.controller("reservController",
 							};
 						
 						
-					/*	$rootScope.data = {
+						$rootScope.data = {
 							CheckIn : $scope.CheckIn,
 							CheckOut : $scope.CheckOut,
 							Room_type : $scope.Room_type,
@@ -200,7 +166,7 @@ app.controller("reservController",
 							
 						  
 						}
-						/*if(($scope.Room_type=="single")||($scope.Room_type=="double")||($scope.Room_type=="TripleRoom")||($scope.Room_type=="Suite")||($scope.Room_type=="HoneyMoonRoom"))
+						if(($scope.Room_type=="single")||($scope.Room_type=="double")||($scope.Room_type=="TripleRoom")||($scope.Room_type=="Suite")||($scope.Room_type=="HoneyMoonRoom"))
 						{
 						dataFactory.reservation(JSON.stringify($rootScope.data))
 								.success(function(result) {
@@ -221,4 +187,5 @@ else
 	{
 	  alert("Please enter the CkeckIn, CheckOut And Room_type for Check availability");
 	}
-					};*/
+					};
+					});
